@@ -102,7 +102,16 @@ android {
             resValue("string", "google_key", tasks_google_key ?: "")
             isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard.pro")
-            signingConfig = signingConfigs.getByName("release")
+            // Apply release signing only if all required properties are present and the keystore exists
+            val tasksKeyAlias: String? by project
+            val tasksStoreFile: String? by project
+            val tasksStorePassword: String? by project
+            val tasksKeyPassword: String? by project
+            val hasSigning = listOf(tasksKeyAlias, tasksStorePassword, tasksKeyPassword)
+                .all { !it.isNullOrBlank() } && tasksStoreFile?.let { file(it).exists() } == true
+            if (hasSigning) {
+                signingConfig = signingConfigs.getByName("release")
+            }
         }
     }
 
