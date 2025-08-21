@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 60
 
     env:
-      PROJECT_DIR: third_party_tasks_minimal_for_build/third_party_tasks_minimal_for_build/third_party/tasks
+      PROJECT_DIR: .
 
     steps:
       - name: Checkout
@@ -29,7 +29,7 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Detect compileSdk and buildTools
+  - name: Detect compileSdk and buildTools
         id: detect
         shell: bash
         working-directory: ${{ env.PROJECT_DIR }}
@@ -61,12 +61,12 @@ jobs:
             "platforms;android-${COMPILE_SDK}" \
             "build-tools;${BUILD_TOOLS}"
 
-      - name: Grant execute permission for Gradle wrapper
+  - name: Grant execute permission for Gradle wrapper
         shell: bash
         working-directory: ${{ env.PROJECT_DIR }}
         run: chmod +x ./gradlew
 
-      - name: Build Generic Release APK
+  - name: Build Generic Release APK
         shell: bash
         working-directory: ${{ env.PROJECT_DIR }}
         run: |
@@ -77,7 +77,7 @@ jobs:
         with:
           name: app-generic-release-apk
           path: |
-            ${{ env.PROJECT_DIR }}/app/build/outputs/apk/generic/release/*.apk
+            app/build/outputs/apk/generic/release/*.apk
           if-no-files-found: error
 
       # Optional: also upload Google Play flavor APK if present
@@ -87,5 +87,5 @@ jobs:
         with:
           name: app-googleplay-release-apk
           path: |
-            ${{ env.PROJECT_DIR }}/app/build/outputs/apk/googleplay/release/*.apk
+            app/build/outputs/apk/googleplay/release/*.apk
           if-no-files-found: ignore
