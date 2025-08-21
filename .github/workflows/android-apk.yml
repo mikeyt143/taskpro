@@ -11,7 +11,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-
     env:
       PROJECT_DIR: .
 
@@ -29,10 +28,9 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
-  - name: Detect compileSdk and buildTools
+      - name: Detect compileSdk and buildTools
         id: detect
         shell: bash
-        working-directory: ${{ env.PROJECT_DIR }}
         run: |
           set -euo pipefail
           FILE="gradle/libs.versions.toml"
@@ -40,16 +38,15 @@ jobs:
             echo "libs.versions.toml not found at $FILE" >&2
             exit 1
           fi
-          COMPILE_SDK=$(grep -Eo '^android\.compileSdk\s*=\s*[0-9]+' "$FILE" | grep -Eo '[0-9]+' | tail -n1 || true)
-          TARGET_SDK=$(grep -Eo '^android\.targetSdk\s*=\s*[0-9]+' "$FILE" | grep -Eo '[0-9]+' | tail -n1 || true)
-          BUILD_TOOLS=$(grep -Eo '^android\.buildTools\s*=\s*[0-9.]+"?' "$FILE" | grep -Eo '[0-9.]+' | tail -n1 || true)
-          # Sensible defaults if not specified
-          COMPILE_SDK=${COMPILE_SDK:-34}
+          COMPILE_SDK=$(grep -Eo '^(android[.-]compileSdk)\s*=\s*"?[0-9]+' "$FILE" | grep -Eo '[0-9]+' | tail -n1 || true)
+          TARGET_SDK=$(grep -Eo '^(android[.-]targetSdk)\s*=\s*"?[0-9]+' "$FILE" | grep -Eo '[0-9]+' | tail -n1 || true)
+          BUILD_TOOLS=$(grep -Eo '^(android[.-]buildTools)\s*=\s*"?[0-9.]+' "$FILE" | grep -Eo '[0-9.]+' | tail -n1 || true)
+          COMPILE_SDK=${COMPILE_SDK:-36}
           TARGET_SDK=${TARGET_SDK:-$COMPILE_SDK}
-          BUILD_TOOLS=${BUILD_TOOLS:-34.0.0}
-          echo "COMPILE_SDK=$COMPILE_SDK" | tee -a "$GITHUB_ENV"
-          echo "TARGET_SDK=$TARGET_SDK" | tee -a "$GITHUB_ENV"
-          echo "BUILD_TOOLS=$BUILD_TOOLS" | tee -a "$GITHUB_ENV"
+          BUILD_TOOLS=${BUILD_TOOLS:-36.0.0}
+          echo "COMPILE_SDK=$COMPILE_SDK" >> "$GITHUB_ENV"
+          echo "TARGET_SDK=$TARGET_SDK" >> "$GITHUB_ENV"
+          echo "BUILD_TOOLS=$BUILD_TOOLS" >> "$GITHUB_ENV"
 
       - name: Install Android platforms and build-tools
         shell: bash
@@ -61,31 +58,25 @@ jobs:
             "platforms;android-${COMPILE_SDK}" \
             "build-tools;${BUILD_TOOLS}"
 
-  - name: Grant execute permission for Gradle wrapper
+      - name: Grant execute permission for Gradle wrapper
         shell: bash
-        working-directory: ${{ env.PROJECT_DIR }}
         run: chmod +x ./gradlew
 
-  - name: Build Generic Release APK
+      - name: Build Generic Release APK
         shell: bash
-        working-directory: ${{ env.PROJECT_DIR }}
-        run: |
-          ./gradlew --no-daemon --stacktrace clean app:assembleGenericRelease
+        run: ./gradlew --no-daemon --stacktrace clean app:assembleGenericRelease
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-generic-release-apk
-          path: |
-            app/build/outputs/apk/generic/release/*.apk
+          path: app/build/outputs/apk/generic/release/*.apk
           if-no-files-found: error
 
-      # Optional: also upload Google Play flavor APK if present
       - name: Upload Google Play Release APK (if exists)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: app-googleplay-release-apk
-          path: |
-            app/build/outputs/apk/googleplay/release/*.apk
+          path: app/build/outputs/apk/googleplay/release/*.apk
           if-no-files-found: ignore
