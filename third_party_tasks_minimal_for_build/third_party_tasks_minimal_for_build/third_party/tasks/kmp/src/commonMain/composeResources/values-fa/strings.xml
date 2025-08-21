@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">جست و جو</string>
+    <string name="filter_my_tasks">وظایف من</string>
+    <string name="filter_notifications">اعلان ها</string>
+    <string name="filter_timer">وظایف زمانبندی شده</string>
+    <string name="filter_today">امروز</string>
+    <string name="filter_recently_modified">اخیرا ویرایش شده</string>
+    <string name="default_list">لیست پیش فرض</string>
+    <string name="settings">تنظیمات</string>
+    <string name="drawer_filters">فیلترها</string>
+    <string name="drawer_tags">برچسب ها</string>
+    <string name="tmrw">فردا</string>
+    <string name="tomorrow">فردا</string>
+    <string name="yest">دیروز</string>
+    <string name="yesterday">فردا بعد از ظهر</string>
+    <string name="today">امروز</string>
+    <string name="show_completed">نمایش انجام شده ها</string>
+    <string name="requires_pro_subscription">ویژگی حرفه ای</string>
+    <string name="subscription_required_description">همه ویژگی ها را با قیمت 1 دلار در سال باز کنید</string>
+    <string name="subscribe">مشترک شدن</string>
+    <string name="filter_snoozed">چرت زده</string>
+</resources>

@@ -1,0 +1,7 @@
+This application includes code from the Tasks project which is licensed under the GNU General Public License v3.
+
+Full license text is present in the source tree (LICENSE). When distributing binaries, you must make the full corresponding source available under GPLv3.
+
+Source code for this modified build: https://github.com/mikeyt143/tasks
+
+Contact: gjappforce@gmail.com

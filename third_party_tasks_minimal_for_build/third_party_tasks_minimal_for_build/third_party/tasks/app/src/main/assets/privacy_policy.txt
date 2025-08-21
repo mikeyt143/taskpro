@@ -1,0 +1,57 @@
+MyTasks Pro — Privacy Policy
+
+Last updated: 2025-08-20
+
+Summary
+MyTasks Pro is a local-first task management app based on the open-source Tasks project. By default, your tasks and related data are stored only on your device. The app will only transmit data off-device when you explicitly enable a sync account (for example, CalDAV or Google Tasks) or enable features that require network access.
+
+What this policy covers
+This policy describes what data the app may collect, how that data is used, and how you can control your data. It also explains third-party services (including ad providers) that may collect data when enabled.
+
+1. Personal data and usage data we collect
+- Local-only data: Tasks, notes, attachments, and preferences are stored locally on your device by default.
+- Sync data: If you connect a sync account (CalDAV, Google Tasks, etc.), the app will transmit your tasks and related metadata to that service. That provider’s privacy policy applies to data processed by the provider.
+- Analytics: The app may include optional analytics/crash reporting when enabled (Firebase Crashlytics / Analytics). These services collect crash and usage diagnostics; no personal data is collected unless you explicitly provide it.
+
+2. Ads and advertising providers (if enabled)
+- If you enable ads or install a Play-distributed flavor that includes ad SDKs, third-party ad networks may collect information about your device and activities for ad targeting, measurement, and fraud prevention. This commonly includes device identifiers (Advertising ID), IP address, and basic device information.
+- Ad provider: Google AdMob
+- Ad unit IDs used in this app:
+	- Banner: ca-app-pub-9921617583421299/1493910375
+	- Native (advanced): ca-app-pub-9921617583421299/5886814476
+	- Rewarded (beta): ca-app-pub-9921617583421299/8606113634
+- For details about what the ad provider collects and how they use it, please consult the ad provider’s privacy policy:
+	- Google AdMob: https://policies.google.com/technologies/ads
+
+3. Data sharing and third parties
+- We do not sell your personal data.
+- We may share data with third-party services you explicitly enable (sync providers, ad networks, crash reporting). Those services are governed by their own privacy policies.
+
+4. Consent and choices
+- To disable sync and keep data local, do not configure any sync accounts in the app.
+- To opt out of personalized ads, use your device settings to limit ad personalization or follow the ad provider’s opt-out instructions.
+- If EU user consent is required, the app will present a consent form before personalized ads are shown (if enabled).
+
+5. Security
+- We take reasonable steps to protect data stored on the device. The app does not encrypt data by default; use device-level encryption and Android backup controls as appropriate.
+
+6. Children
+- The app is not directed at children under 13. We do not knowingly collect personal data from children.
+
+7. How to view or delete your data
+- You can export or delete your tasks using the app’s backup and export features.
+
+8. Contact
+- For privacy questions or requests about your data, contact: gjappforce@gmail.com
+
+9. Changes to this policy
+- We may update this policy from time to time. The date at the top indicates the most recent revision.
+
+Host this policy publicly
+Before publishing to the Play Store, host this privacy policy on a public HTTPS URL (for example GitHub Pages or your website) and enter that URL in the Play Console. Keep the hosted policy in sync with this in-app copy.
+
+Placeholders to update before publishing:
+- Replace [Add provider name(s) here, e.g. Google AdMob] with the ad provider(s) you use.
+- Replace contact email with the actual contact address for privacy requests.
+
+(This file is a recommended template. Please review and adapt to match your precise data flows and legal requirements.)

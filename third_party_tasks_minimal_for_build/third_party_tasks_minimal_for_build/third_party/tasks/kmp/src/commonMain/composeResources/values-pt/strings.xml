@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Pesquisar</string>
+    <string name="subscribe">Inscrever-se</string>
+    <string name="filter_my_tasks">Minhas tarefas</string>
+    <string name="filter_notifications">Notificações</string>
+    <string name="filter_snoozed">Adiado</string>
+    <string name="filter_timer">Tarefas cronometradas</string>
+    <string name="filter_today">Hoje</string>
+    <string name="filter_recently_modified">Alteradas recentemente</string>
+    <string name="default_list">Lista padrão</string>
+    <string name="help_and_feedback">Ajuda &amp; sugestões</string>
+    <string name="settings">Configurações</string>
+    <string name="drawer_filters">Filtros</string>
+    <string name="drawer_tags">Etiquetas</string>
+    <string name="drawer_places">Locais</string>
+    <string name="drawer_local_lists">Listas locais</string>
+    <string name="tmrw">Amanhã</string>
+    <string name="tomorrow_abbrev_lowercase">amanhã</string>
+    <string name="tomorrow">Amanhã</string>
+    <string name="tomorrow_lowercase">amanhã</string>
+    <string name="yest">Ontem</string>
+    <string name="yesterday_abbrev_lowercase">ontem</string>
+    <string name="yesterday">Ontem</string>
+    <string name="yesterday_lowercase">ontem</string>
+    <string name="today">Hoje</string>
+    <string name="today_lowercase">hoje</string>
+    <string name="show_unstarted">Mostrar não iniciadas</string>
+    <string name="show_completed">Mostrar terminadas</string>
+    <string name="search_no_results">Não há resultados</string>
+    <string name="requires_pro_subscription">Funcionalidade Pro</string>
+    <string name="subscription_required_description">Desbloqueie todas as funcionalidades por apenas $1 USD por ano</string>
+    <string name="wear_install_app">Instale no celular</string>
+    <string name="wear_unknown_error">Erro desconhecido</string>
+    <string name="add_task">Adicionar tarefa</string>
+</resources>

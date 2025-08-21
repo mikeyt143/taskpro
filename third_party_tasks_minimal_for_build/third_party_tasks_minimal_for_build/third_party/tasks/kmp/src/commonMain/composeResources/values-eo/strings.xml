@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Serĉi</string>
+    <string name="subscribe">Aboni</string>
+    <string name="filter_my_tasks">Miaj Taskoj</string>
+    <string name="filter_notifications">Sciigoj</string>
+    <string name="filter_snoozed">Paŭzigitaj</string>
+    <string name="filter_timer">Taskoj Tempomezuritaj</string>
+    <string name="filter_today">Hodiaŭ</string>
+    <string name="filter_recently_modified">Lastatempe ŝanĝitaj</string>
+    <string name="default_list">Defaŭlta listo</string>
+    <string name="help_and_feedback">Helpo k pritakso</string>
+    <string name="settings">Agordoj</string>
+    <string name="drawer_filters">Filtriloj</string>
+    <string name="drawer_tags">Etikedoj</string>
+    <string name="drawer_places">Lokoj</string>
+    <string name="drawer_local_lists">Lokaj listoj</string>
+    <string name="tmrw">morgaŭ</string>
+    <string name="tomorrow_abbrev_lowercase">morgaŭ</string>
+    <string name="tomorrow">Morgaŭ</string>
+    <string name="tomorrow_lowercase">morgaŭ</string>
+    <string name="yest">hieraŭ</string>
+    <string name="yesterday_abbrev_lowercase">hieraŭ</string>
+    <string name="yesterday">Hieraŭ</string>
+    <string name="yesterday_lowercase">hieraŭ</string>
+    <string name="today">Hodiaŭ</string>
+    <string name="today_lowercase">hodiaŭ</string>
+    <string name="show_unstarted">Vidigi nekomencitajn</string>
+    <string name="show_completed">Vidigi finitajn</string>
+    <string name="requires_pro_subscription">Profesia funkcio</string>
+    <string name="search_no_results">Neniu rezultoj</string>
+    <string name="subscription_required_description">Pagu laŭeble nur $1 (usona) por malŝlosi ĉiujn funkciojn</string>
+    <string name="add_task">Aldoni taskon</string>
+    <string name="wear_install_app">Instali en poŝtelefonon</string>
+    <string name="wear_unknown_error">Nekonata eraro</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:key="pref_about"
+            android:title="@string/about"
+            android:summary="@string/about_credits" />
+        <Preference
+            android:key="pref_privacy_policy"
+            android:title="@string/privacy_policy_title"
+            android:summary="@string/privacy_policy_summary" />
+        <Preference
+            android:key="pref_source_code"
+            android:title="@string/source_code_label"
+            android:summary="@string/source_code_url" />
+        <Preference
+            android:key="pref_license"
+            android:title="@string/license_label"
+            android:summary="@string/license_short" />
+    </PreferenceCategory>
+</PreferenceScreen>

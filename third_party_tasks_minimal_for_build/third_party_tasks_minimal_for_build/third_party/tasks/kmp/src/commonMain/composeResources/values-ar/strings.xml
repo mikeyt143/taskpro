@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">ابحث</string>
+    <string name="subscribe">اشترك</string>
+    <string name="filter_my_tasks">مهامي</string>
+    <string name="filter_notifications">إشعارات</string>
+    <string name="filter_timer">المهام التي أؤقتت</string>
+    <string name="filter_today">اليوم</string>
+    <string name="filter_recently_modified">ما تم تعديله مؤخرًا</string>
+    <string name="default_list">القائمة الافتراضية</string>
+    <string name="help_and_feedback">مساعدة وتبليغات</string>
+    <string name="settings">إعدادات</string>
+    <string name="drawer_filters">تصفيات</string>
+    <string name="drawer_tags">علامات</string>
+    <string name="drawer_places">الأماكن</string>
+    <string name="drawer_local_lists">القوائم المحلية</string>
+    <string name="tmrw">غدًا</string>
+    <string name="tomorrow_abbrev_lowercase">غدًا</string>
+    <string name="tomorrow">غدًا</string>
+    <string name="tomorrow_lowercase">الغد</string>
+    <string name="yest">أمس</string>
+    <string name="yesterday_abbrev_lowercase">البارحة</string>
+    <string name="yesterday">الأمس</string>
+    <string name="yesterday_lowercase">أمس</string>
+    <string name="today">اليوم</string>
+    <string name="today_lowercase">اليوم</string>
+    <string name="show_unstarted">إظهار الغير مبدوء</string>
+    <string name="show_completed">إظهار المهام المكتملة</string>
+    <string name="subscription_required_description">استمتع بجميع الميزات مقابل 1 دولار أمريكي واحد في السنة</string>
+    <string name="filter_snoozed">غفو</string>
+    <string name="wear_install_app">التثبيت على الهاتف</string>
+    <string name="wear_unknown_error">خطأ غير معروف</string>
+    <string name="search_no_results">لا نتائج</string>
+    <string name="add_task">إضافة مهمة</string>
+    <string name="requires_pro_subscription">يتطلب اشتراك احترافي</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">தேடு</string>
+    <string name="subscribe">பதிவு</string>
+    <string name="filter_my_tasks">என் வேலைகள்</string>
+    <string name="filter_notifications">அறிவிப்புகள்</string>
+    <string name="filter_timer">பணிகள் முடிந்துவிட்டன</string>
+    <string name="filter_today">இன்று</string>
+    <string name="filter_recently_modified">சமீபத்தில் மாற்றியவை</string>
+    <string name="default_list">இயல்புநிலை பட்டியல்</string>
+    <string name="help_and_feedback">உதவி &amp; கருத்து</string>
+    <string name="settings">அமைப்புகள்</string>
+    <string name="drawer_filters">வடிப்பான்கள்</string>
+    <string name="drawer_tags">குறிச்சொற்கள்</string>
+    <string name="drawer_places">இடங்கள்</string>
+    <string name="tmrw">நாளை</string>
+    <string name="tomorrow">நாளை</string>
+    <string name="tomorrow_lowercase">நாளை</string>
+    <string name="yest">நேற்று</string>
+    <string name="yesterday">நேற்று</string>
+    <string name="yesterday_lowercase">நேற்று</string>
+    <string name="today">இன்று</string>
+    <string name="today_lowercase">இன்று</string>
+    <string name="show_unstarted">தொடங்காதவற்றை காட்டு</string>
+    <string name="show_completed">நிகழ்ச்சி முடிந்தது</string>
+    <string name="search_no_results">முடிவுகள் இல்லை</string>
+    <string name="requires_pro_subscription">தொழில்முறை நற்பொருத்தம்</string>
+    <string name="subscription_required_description">வருடத்திற்கு US 1 அமெரிக்க டாலர் வரை அனைத்து அம்சங்களையும் திறக்கவும்</string>
+    <string name="filter_snoozed">உறக்கநிலை</string>
+    <string name="wear_install_app">தொலைபேசியில் நிறுவவும்</string>
+    <string name="wear_unknown_error">தெரியாத பிழை</string>
+    <string name="add_task">பணியைச் சேர்க்கவும்</string>
+    <string name="drawer_local_lists">உள்ளக பட்டியல்கள்</string>
+    <string name="tomorrow_abbrev_lowercase">டி.எம்.ஆர்.டபிள்யூ</string>
+    <string name="yesterday_abbrev_lowercase">உள்ளது</string>
+</resources>

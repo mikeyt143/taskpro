@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Use Roboto/Google Sans fallback where Inter binaries are unavailable in this repo; this provides a similar modern look. -->
+    <font android:fontStyle="normal" android:fontWeight="400" android:font="@font/roboto_regular" />
+    <font android:fontStyle="normal" android:fontWeight="700" android:font="@font/roboto_bold" />
+</font-family>
